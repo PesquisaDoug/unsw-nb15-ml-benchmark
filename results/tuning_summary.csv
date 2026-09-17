@@ -1,0 +1,6 @@
+model,best_cv_f1,refit_time_seconds,best_params
+Dummy,,0.30805349998991005,{}
+RandomForest,0.9693841472222268,16.262371063232422,"{""model__n_estimators"": 200, ""model__min_samples_split"": 5, ""model__min_samples_leaf"": 1, ""model__max_features"": ""log2"", ""model__max_depth"": null, ""model__class_weight"": null}"
+XGBoost,0.9713848693728164,4.848320722579956,"{""model__subsample"": 0.85, ""model__n_estimators"": 600, ""model__min_child_weight"": 1, ""model__max_depth"": 9, ""model__learning_rate"": 0.05, ""model__colsample_bytree"": 0.85}"
+SVM,0.954504961872059,7.908057451248169,"{""model__C"": 1.1435780278433403, ""model__class_weight"": null}"
+MLP,0.9615074189414462,66.41691756248474,"{""model__activation"": ""relu"", ""model__alpha"": 0.0011214774784159462, ""model__hidden_layer_sizes"": [128, 64], ""model__learning_rate_init"": 0.0009780337016659412}"

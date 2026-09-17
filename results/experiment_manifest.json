@@ -1,0 +1,104 @@
+{
+  "experiment_name": "unsw_nb15_classical_ml_benchmark",
+  "profile": "full",
+  "seed": 42,
+  "quick_mode": false,
+  "training_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+  "testing_sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559",
+  "train_rows": 175341,
+  "test_rows": 82332,
+  "input_feature_count": 42,
+  "numeric_feature_count": 39,
+  "categorical_features": [
+    "proto",
+    "service",
+    "state"
+  ],
+  "excluded_columns": [
+    "label",
+    "attack_cat",
+    "id"
+  ],
+  "target": {
+    "column": "label",
+    "0": "normal",
+    "1": "attack"
+  },
+  "tuning_cv_folds": 3,
+  "evaluation_cv_folds": 5,
+  "tuning_iterations": 15,
+  "bootstrap_iterations": 1500,
+  "cluster_sample_size": 15000,
+  "importance_sample_size": 8000,
+  "importance_repeats": 15,
+  "git_commit": null,
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "requests": "2.34.2"
+  },
+  "dataset": "UNSW-NB15",
+  "data_manifest": {
+    "dataset": "UNSW-NB15",
+    "canonical_source": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+    "official_train_rows_reported": 175341,
+    "official_test_rows_reported": 82332,
+    "training_file": {
+      "name": "UNSW_NB15_training-set.csv",
+      "origin_in_this_run": "verified public mirror",
+      "rows": 175341,
+      "columns": 45,
+      "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+    },
+    "testing_file": {
+      "name": "UNSW_NB15_testing-set.csv",
+      "origin_in_this_run": "verified public mirror",
+      "rows": 82332,
+      "columns": 45,
+      "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+    },
+    "retrieved_or_validated_at_utc": "2026-09-17T01:44:13.708882+00:00",
+    "target": {
+      "column": "label",
+      "0": "normal",
+      "1": "attack"
+    },
+    "posthoc_metadata": "attack_cat",
+    "note": "attack_cat is retained only for post-hoc attack-wise analysis and is excluded from all supervised/unsupervised model inputs."
+  },
+  "best_model_for_demo": "XGBoost",
+  "best_model_test_metrics": {
+    "accuracy": 0.8720060243890589,
+    "balanced_accuracy": 0.8594499762711623,
+    "precision": 0.819938943651611,
+    "recall_detection_rate": 0.983521574163946,
+    "f1": 0.8943113892566293,
+    "roc_auc": 0.9837358539162123,
+    "pr_auc": 0.9880903729890184,
+    "mcc": 0.7551454546835429,
+    "false_positive_rate": 0.2646216216216216,
+    "inference_ms_total_median": 205.27360000414774,
+    "inference_us_per_record_median": 2.493241995872173,
+    "final_fit_time_seconds": 4.09837379999226,
+    "model_size_mb": 2.2397899627685547
+  },
+  "selected_dbscan": {
+    "eps": 1.834593378327094,
+    "min_samples": 10,
+    "n_clusters": 13,
+    "noise_fraction": 0.0318
+  },
+  "started_at_utc": "2026-09-17T01:44:13.708882+00:00",
+  "completed_at_utc": "2026-09-17T02:23:45.531322+00:00",
+  "cluster_sample_size_actual": 15000,
+  "pca_components": 21,
+  "pca_variance_retained": 0.9500291520784169,
+  "encoded_dimensions": 189
+}

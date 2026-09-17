@@ -1,0 +1,12 @@
+{
+  "cluster_sample_size": 15000,
+  "encoded_dimensions": 189,
+  "pca_components": 21,
+  "pca_variance_retained": 0.9500291520784169,
+  "selected_dbscan": {
+    "eps": 1.834593378327094,
+    "min_samples": 10,
+    "n_clusters": 13,
+    "noise_fraction": 0.0318
+  }
+}

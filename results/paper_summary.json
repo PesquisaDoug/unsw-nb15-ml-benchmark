@@ -1,0 +1,27 @@
+{
+  "dataset": "UNSW-NB15",
+  "canonical_source": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+  "train_rows": 175341,
+  "test_rows": 82332,
+  "input_features": 42,
+  "supervised_models": [
+    "Dummy",
+    "RandomForest",
+    "XGBoost",
+    "LinearSVM",
+    "MLP"
+  ],
+  "unsupervised_models": [
+    "KMeans",
+    "DBSCAN"
+  ],
+  "best_demo_model": "XGBoost",
+  "main_results": {
+    "supervised": "results/metrics.csv",
+    "cross_validation": "results/cv_metrics.csv",
+    "bootstrap_ci": "results/bootstrap_ci.csv",
+    "attackwise": "results/attackwise_detection.csv",
+    "clustering": "results/clustering_metrics.csv"
+  },
+  "figures_directory": "figures/"
+}
