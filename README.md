@@ -2,6 +2,12 @@
 
 This repository modularizes the original executed notebook into a reproducible Python project for a classical ML benchmark on the official predefined UNSW-NB15 train/test partition.
 
+## Repository and Archive
+
+- Repository: <https://github.com/PesquisaDoug/unsw-nb15-ml-benchmark>
+- Manuscript: [`paper/manuscript.pdf`](paper/manuscript.pdf) (source: [`paper/manuscript.tex`](paper/manuscript.tex))
+- Archival snapshot (Zenodo DOI): `<ZENODO_DOI>` — placeholder until the corresponding release is archived on Zenodo.
+
 ## Research Questions
 
 - RQ1 - Supervised performance: How do Random Forest, XGBoost, Support Vector Machine and Multilayer Perceptron compare for binary network intrusion detection?
@@ -139,3 +145,5 @@ It does not parse PCAP files, capture packets, ingest raw NetFlow/Syslog, monito
 The project should cite the UNSW-NB15 dataset page and associated publications requested by the dataset authors, beginning with:
 
 Moustafa, N., & Slay, J. (2015). UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set). Military Communications and Information Systems Conference (MilCIS).
+
+To cite this software/benchmark itself, see [`CITATION.cff`](CITATION.cff). The archival Zenodo DOI (`<ZENODO_DOI>`) will be added there and here once the corresponding release is archived; until then, cite the repository at <https://github.com/PesquisaDoug/unsw-nb15-ml-benchmark>.
