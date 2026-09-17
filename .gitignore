@@ -1,0 +1,26 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.DS_Store
+Thumbs.db
+*.part
+
+# Third-party raw dataset files
+data/raw/*.csv
+
+# Large binary model artifacts may be regenerated from scripts.
+artifacts/models/*.joblib
+.archive
+
+# LaTeX build byproducts (regenerated on compile)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out

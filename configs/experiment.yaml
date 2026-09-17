@@ -1,0 +1,39 @@
+random_seed: 42
+
+dataset:
+  name: UNSW-NB15
+  train_file: UNSW_NB15_training-set.csv
+  test_file: UNSW_NB15_testing-set.csv
+  target: label
+  attack_category: attack_cat
+  prefer_local_files: true
+  auto_download_mirror: true
+
+cross_validation:
+  tuning_folds: 3
+
+clustering:
+  silhouette_sample_size: 2000
+
+resources:
+  search_n_jobs: 1
+  evaluation_n_jobs: -1
+
+profiles:
+  quick:
+    evaluation_folds: 3
+    tuning_iterations: 5
+    bootstrap_iterations: 300
+    inference_repeats: 10
+    cluster_sample_size: 8000
+    importance_sample_size: 3000
+    importance_repeats: 5
+
+  full:
+    evaluation_folds: 5
+    tuning_iterations: 15
+    bootstrap_iterations: 1500
+    inference_repeats: 30
+    cluster_sample_size: 15000
+    importance_sample_size: 8000
+    importance_repeats: 15
