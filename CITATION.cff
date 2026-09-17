@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Benchmarking Supervised and Unsupervised Machine Learning for Network Intrusion Detection on UNSW-NB15"
+message: "If you use this benchmark project, please cite it and the UNSW-NB15 dataset papers."
+type: software
+authors:
+  - name: "Douglas"
+version: "0.1.0"
+date-released: "2026-09-16"
+repository-code: ""
