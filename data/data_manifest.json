@@ -1,0 +1,28 @@
+{
+  "dataset": "UNSW-NB15",
+  "canonical_source": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+  "official_train_rows_reported": 175341,
+  "official_test_rows_reported": 82332,
+  "training_file": {
+    "name": "UNSW_NB15_training-set.csv",
+    "origin_in_this_run": "verified public mirror",
+    "rows": 175341,
+    "columns": 45,
+    "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+  },
+  "testing_file": {
+    "name": "UNSW_NB15_testing-set.csv",
+    "origin_in_this_run": "verified public mirror",
+    "rows": 82332,
+    "columns": 45,
+    "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+  },
+  "retrieved_or_validated_at_utc": "2026-09-17T02:23:44.546809+00:00",
+  "target": {
+    "column": "label",
+    "0": "normal",
+    "1": "attack"
+  },
+  "posthoc_metadata": "attack_cat",
+  "note": "attack_cat is retained only for post-hoc attack-wise analysis and is excluded from all supervised/unsupervised model inputs."
+}
